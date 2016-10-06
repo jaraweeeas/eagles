@@ -255,6 +255,7 @@
       <LastGenOutput>Model1.vb</LastGenOutput>
     </Content>
     <Content Include="Menu.Master" />
+    <Content Include="Home.Master" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.8.2.js" />
     <Content Include="Scripts\jquery-1.8.2.min.js" />
@@ -368,6 +369,13 @@
     </Compile>
     <Compile Include="Global.asax.vb">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Home.Master.designer.vb">
+      <DependentUpon>Home.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Home.Master.vb">
+      <DependentUpon>Home.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Menu.Master.designer.vb">
       <DependentUpon>Menu.Master</DependentUpon>

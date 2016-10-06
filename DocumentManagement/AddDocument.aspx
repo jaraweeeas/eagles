@@ -1,9 +1,10 @@
-﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="AddDocument.aspx.vb" Inherits="DocumentManagement.AddDocument"  %>
+﻿<%@ Page Title="About" Language="VB" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="AddDocument.aspx.vb" Inherits="DocumentManagement.AddDocument"  %>
+<asp:Content runat="server" ID="FeaturedContent" ContentPlaceHolderID="FeaturedContent">
 
-<link href="Content/DocCss.css" rel="stylesheet" type="text/css" />
-<html>
+    <link href="Content/DocCss.css" rel="stylesheet" type="text/css" />
+    
 
-<head runat="server">
+
     <title></title>
     <style type="text/css">
         .auto-style4 {
@@ -29,10 +30,8 @@
             width: 833px;
         }
         </style>
-    </head>
-
-<body class="bg">
-    <form runat="server" >
+ 
+   
         <asp:Panel ID="Panel2" runat="server"  width="100%" >
       <table class="table-info"  style="width:919px" >
           <tr>
@@ -134,6 +133,5 @@
             <asp:SqlDataSource ID="SqlDataSource3" runat="server" ConnectionString="<%$ ConnectionStrings:D_ConnectionString %>" SelectCommand="SELECT * FROM [M_Document] ORDER BY [Userdate] DESC"></asp:SqlDataSource>
        
         </asp:Panel>
-    </form>
-</body>
-</html>
+   </asp:Content>
+ 
