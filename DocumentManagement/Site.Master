@@ -39,7 +39,7 @@
         <div class="content-wrapper">
             <div class="float-left">
                 <p class="site-title">
-                    <a runat="server" href="~/">your logo here</a></p>
+                <asp:Image ID="header" runat="server" height="170px" style="margin-right:10px" ImageUrl="~/Images/header.png" ImageAlign="left" Width="672px"/></p>
             </div>
             <div class="float-right">
                 <section id="login">
@@ -62,9 +62,9 @@
                 </section>
                 <nav>
                     <ul id="menu">
-                        <li><a runat="server" href="~/">Home</a></li>
-                        <li><a runat="server" href="~/About">About</a></li>
-                        <li><a runat="server" href="~/Contact">Contact</a></li>
+                        <li class="message-info"><a runat="server" href="~/">Home</a></li>
+                        <li class="message-info"><a runat="server" href="~/About">About</a></li>
+                        <li class="message-info"><a runat="server" href="~/Contact">Contact</a></li>
                     </ul>
                 </nav>
             </div>
